@@ -343,6 +343,10 @@ function Index() {
       <section className="relative px-8 pt-20 pb-24">
         <Smiley className="absolute -top-2 left-[6%] w-24 text-foreground" />
         <Squiggle className="absolute top-10 right-[8%] w-28 rotate-[6deg]" style={{ color: RED }} />
+        <Cloud className="absolute top-6 left-[40%] w-20 text-foreground hidden md:block" />
+        <Heart className="absolute bottom-12 left-[3%] w-10 hidden md:block rotate-[-10deg]" style={{ color: RED }} />
+        <Lightning className="absolute top-24 right-[36%] w-8 hidden md:block" style={{ color: RED }} />
+
 
         <div className="mx-auto max-w-6xl">
           <div className="mb-12 flex items-baseline gap-4">
