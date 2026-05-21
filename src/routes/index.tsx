@@ -147,7 +147,7 @@ const CheckLabel = ({
 
 function Index() {
   const marqueeItems = ["Shaved Ice", "Est. 2026", "Open during the summer", "1–7pm", "780 Brewster Avenue"];
-  const loop = [...marqueeItems, ...marqueeItems];
+
 
 
   return (
@@ -216,17 +216,22 @@ function Index() {
 
       {/* MARQUEE */}
       <section className="marquee relative border-y-2 border-foreground bg-background py-5 overflow-hidden">
-        <div className="marquee-track flex whitespace-nowrap font-display text-4xl md:text-6xl font-bold uppercase tracking-tight">
-          {loop.map((item, i) => (
-            <span key={i} className="mx-8 flex items-center gap-12 shrink-0">
-              {item}
-              <span style={{ color: RED }} className="font-marker text-5xl md:text-7xl">
-                ·
-              </span>
-            </span>
+        <div className="marquee-track inline-flex whitespace-nowrap font-display text-4xl md:text-6xl font-bold uppercase tracking-tight">
+          {[0, 1].map((copy) => (
+            <div key={copy} className="flex shrink-0" aria-hidden={copy === 1 ? "true" : undefined}>
+              {marqueeItems.map((item, i) => (
+                <span key={i} className="mx-8 flex items-center gap-12 shrink-0">
+                  {item}
+                  <span style={{ color: RED }} className="font-marker text-5xl md:text-7xl">
+                    ·
+                  </span>
+                </span>
+              ))}
+            </div>
           ))}
         </div>
       </section>
+
 
       {/* FLAVORS */}
       <section className="relative px-8 pt-20 pb-24">
