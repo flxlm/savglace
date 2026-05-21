@@ -192,8 +192,7 @@ function Index() {
                 strokeLinecap="round"
                 strokeLinejoin="round"
               >
-                <path d="M 280 80 Q 200 10, 62 52" />
-                <path d="M 78 42 L 60 52 L 72 64" />
+                <path d="M 280 80 Q 200 10, 62 52 L 78 42 M 62 52 L 72 64" />
               </svg>
               <span
                 className="font-marker text-2xl md:text-3xl rotate-[-6deg] whitespace-nowrap"
