@@ -63,10 +63,11 @@
 
 :root {
   --radius: 0.625rem;
-  --background: oklch(0.955 0.018 85);
-  --foreground: oklch(0.18 0.01 60);
-  --ink: oklch(0.18 0.01 60);
-  --accent-rose: oklch(0.68 0.18 18);
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.15 0 0);
+  --ink: oklch(0.15 0 0);
+  --accent-rose: oklch(0.62 0.22 25);
+
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.129 0.042 264.695);
   --popover: oklch(1 0 0);
