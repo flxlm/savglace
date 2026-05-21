@@ -104,6 +104,110 @@ const Star = ({ className = "", style }: DoodleProps) => (
   </svg>
 );
 
+const Spiral = ({ className = "", style }: DoodleProps) => (
+  <svg
+    viewBox="0 0 60 60"
+    className={className}
+    style={style}
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="3"
+    strokeLinecap="round"
+  >
+    <path d="M30 30 m0 0 a4 4 0 1 1 4 -4 a8 8 0 1 1 -12 4 a12 12 0 1 1 20 -8 a16 16 0 1 1 -26 10" />
+  </svg>
+);
+
+const Sparkle = ({ className = "", style }: DoodleProps) => (
+  <svg
+    viewBox="0 0 60 60"
+    className={className}
+    style={style}
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="3"
+    strokeLinecap="round"
+  >
+    <path d="M30 6 L34 26 L54 30 L34 34 L30 54 L26 34 L6 30 L26 26 Z" />
+  </svg>
+);
+
+const Heart = ({ className = "", style }: DoodleProps) => (
+  <svg
+    viewBox="0 0 60 60"
+    className={className}
+    style={style}
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="3"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <path d="M30 50 C10 36 8 18 22 14 C28 12 30 18 30 22 C30 18 32 12 38 14 C52 18 50 36 30 50 Z" />
+  </svg>
+);
+
+const Cloud = ({ className = "", style }: DoodleProps) => (
+  <svg
+    viewBox="0 0 100 60"
+    className={className}
+    style={style}
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="3"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <path d="M20 44 Q8 44 10 32 Q12 22 24 24 Q26 12 40 14 Q52 8 58 20 Q72 18 74 30 Q86 30 84 44 Z" />
+  </svg>
+);
+
+const Sun = ({ className = "", style }: DoodleProps) => (
+  <svg
+    viewBox="0 0 60 60"
+    className={className}
+    style={style}
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="3"
+    strokeLinecap="round"
+  >
+    <circle cx="30" cy="30" r="10" />
+    <path d="M30 6 V14 M30 46 V54 M6 30 H14 M46 30 H54 M13 13 L18 18 M42 42 L47 47 M47 13 L42 18 M13 47 L18 42" />
+  </svg>
+);
+
+const Drop = ({ className = "", style }: DoodleProps) => (
+  <svg
+    viewBox="0 0 40 60"
+    className={className}
+    style={style}
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="3"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <path d="M20 6 C20 6 6 26 6 38 A14 14 0 0 0 34 38 C34 26 20 6 20 6 Z" />
+  </svg>
+);
+
+const Lightning = ({ className = "", style }: DoodleProps) => (
+  <svg
+    viewBox="0 0 40 60"
+    className={className}
+    style={style}
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="3"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <path d="M24 4 L8 32 L18 32 L14 56 L32 26 L22 26 Z" />
+  </svg>
+);
+
+
 const Arrow = ({ className = "", style }: DoodleProps) => (
   <svg
     viewBox="0 0 120 60"
@@ -167,6 +271,11 @@ function Index() {
       <Squiggle className="absolute top-12 left-[8%] w-24 text-foreground rotate-[-8deg] hidden md:block" />
       <Star className="absolute top-[260px] left-[14%] w-10 hidden md:block" style={{ color: RED }} />
       <TicTac className="absolute top-[300px] right-[6%] w-20 text-foreground hidden md:block" />
+      <Sparkle className="absolute top-[90px] left-[44%] w-8 hidden md:block" style={{ color: RED }} />
+      <Sun className="absolute top-[180px] right-[22%] w-12 text-foreground hidden md:block rotate-[12deg]" />
+      <Spiral className="absolute top-[340px] left-[5%] w-14 hidden md:block" style={{ color: RED }} />
+      <Drop className="absolute top-[120px] left-[18%] w-8 hidden md:block rotate-[15deg]" style={{ color: RED }} />
+
 
       {/* HERO */}
       <section className="relative pt-32 pb-12">
@@ -234,6 +343,10 @@ function Index() {
       <section className="relative px-8 pt-20 pb-24">
         <Smiley className="absolute -top-2 left-[6%] w-24 text-foreground" />
         <Squiggle className="absolute top-10 right-[8%] w-28 rotate-[6deg]" style={{ color: RED }} />
+        <Cloud className="absolute top-6 left-[40%] w-20 text-foreground hidden md:block" />
+        <Heart className="absolute bottom-12 left-[3%] w-10 hidden md:block rotate-[-10deg]" style={{ color: RED }} />
+        <Lightning className="absolute top-24 right-[36%] w-8 hidden md:block" style={{ color: RED }} />
+
 
         <div className="mx-auto max-w-6xl">
           <div className="mb-12 flex items-baseline gap-4">
@@ -291,6 +404,10 @@ function Index() {
         <Star className="absolute top-4 right-[12%] w-10 hidden md:block" style={{ color: RED }} />
         <Squiggle className="absolute top-20 left-[6%] w-32 -rotate-[8deg] hidden md:block" style={{ color: RED }} />
         <Smiley className="absolute bottom-12 right-[8%] w-20 hidden md:block" style={{ color: RED }} />
+        <Spiral className="absolute top-8 left-[40%] w-12 text-foreground hidden md:block" />
+        <Sparkle className="absolute bottom-20 left-[20%] w-10 hidden md:block" style={{ color: RED }} />
+        <Sun className="absolute bottom-32 right-[30%] w-10 hidden md:block" style={{ color: RED }} />
+
 
         <div className="mx-auto max-w-5xl">
           <div className="mb-14 flex items-baseline gap-4">
@@ -340,6 +457,10 @@ function Index() {
         </p>
         <Arrow className="absolute bottom-10 left-[10%] w-24 rotate-[170deg] hidden md:block" style={{ color: RED }} />
         <Smiley className="absolute bottom-6 right-[10%] w-16 hidden md:block" style={{ color: RED }} />
+        <Heart className="absolute top-2 left-[30%] w-8 hidden md:block" style={{ color: RED }} />
+        <Cloud className="absolute top-0 right-[28%] w-16 text-foreground hidden md:block" />
+        <Drop className="absolute bottom-20 right-[20%] w-6 hidden md:block rotate-[-12deg]" style={{ color: RED }} />
+
       </section>
 
       {/* FOOTER */}
