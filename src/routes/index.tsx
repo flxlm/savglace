@@ -387,7 +387,7 @@ function Index() {
       </section>
 
       {/* CONTACT WIDGETS */}
-      <section className="relative px-8 pb-24">
+      <section className="relative px-8 pb-12">
         <TicTac className="absolute right-[8%] -top-4 w-24 text-foreground hidden md:block" />
         <Star className="absolute left-[12%] top-10 w-8 hidden md:block" style={{ color: RED }} />
 
