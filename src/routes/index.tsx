@@ -9,19 +9,19 @@ export const Route = createFileRoute("/")({
 const flavors = [
   {
     num: "01",
-    variant: "redbean" as const,
+    variant: "strawberry" as const,
     name: "Red Bean Matcha",
     desc: "Homemade motchi, Anko, and our matcha-flavoured shaved ice.",
   },
   {
     num: "02",
-    variant: "mango" as const,
+    variant: "matcha" as const,
     name: "Mango Snow",
     desc: "Mango, sweetened condensed milk, and a sprig of mint.",
   },
   {
     num: "03",
-    variant: "strawberry" as const,
+    variant: "mango" as const,
     name: "Matcha Strawberry",
     desc: "Our famous strawberry matcha as a shaved ice.",
   },
