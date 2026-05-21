@@ -182,7 +182,7 @@
 }
 
 .animate-marquee {
-  animation: marquee 18s linear infinite;
+  animation: marquee 24s linear infinite;
 }
 
 .font-marker {
@@ -202,4 +202,3 @@
 .marquee:hover .marquee-track {
   animation-play-state: paused;
 }
-
