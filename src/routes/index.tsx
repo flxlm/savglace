@@ -179,9 +179,9 @@ function Index() {
         <div className="mx-auto max-w-5xl px-8 text-center">
           <div className="relative inline-block">
             <img src={logo} alt="SAVGLACÉ mark" className="mx-auto w-40 md:w-48 [&_path]:fill-foreground" />
-            <Arrow className="absolute -right-28 top-6 w-28 hidden md:block" style={{ color: RED }} />
+            <Arrow className="absolute -right-32 top-10 w-24 hidden md:block" style={{ color: RED }} />
             <span
-              className="absolute -right-32 -top-2 font-marker text-xl rotate-[8deg] hidden md:inline"
+              className="absolute -right-28 -top-4 font-marker text-xl rotate-[8deg] hidden md:inline whitespace-nowrap"
               style={{ color: RED }}
             >
               that's us!
