@@ -166,7 +166,7 @@ function Index() {
 
       {/* scattered top doodles + checkboxes (desktop only — too crowded on mobile) */}
       <CheckLabel label="COLD" className="hidden md:flex top-20 left-[24%] rotate-[-4deg]" />
-      <CheckLabel label="FRUITY" className="hidden md:flex top-28 right-[18%] rotate-[3deg]" />
+      <CheckLabel label="FRUITY" className="hidden md:flex top-16 right-[6%] rotate-[3deg]" />
       <CheckLabel label="SWEET" className="hidden md:flex top-[210px] left-[32%] rotate-[-2deg]" />
       <CheckLabel label="HOT" checked={false} className="hidden md:flex top-[230px] right-[10%] rotate-[2deg]" />
 
@@ -179,9 +179,9 @@ function Index() {
         <div className="mx-auto max-w-5xl px-8 text-center">
           <div className="relative inline-block">
             <img src={logo} alt="SAVGLACÉ mark" className="mx-auto w-40 md:w-48 [&_path]:fill-foreground" />
-            <Arrow className="absolute -right-28 top-6 w-28 hidden md:block" style={{ color: RED }} />
+            <Arrow className="absolute -right-32 top-10 w-24 hidden md:block" style={{ color: RED }} />
             <span
-              className="absolute -right-32 -top-2 font-marker text-xl rotate-[8deg] hidden md:inline"
+              className="absolute -right-28 -top-4 font-marker text-xl rotate-[8deg] hidden md:inline whitespace-nowrap"
               style={{ color: RED }}
             >
               that's us!
