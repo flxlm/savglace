@@ -177,16 +177,32 @@ function Index() {
       {/* HERO */}
       <section className="relative pt-32 pb-12">
         <div className="mx-auto max-w-5xl px-8 text-center">
-          <div className="relative inline-block">
-            <img src={logo} alt="SAVGLACÉ mark" className="mx-auto w-40 md:w-48 [&_path]:fill-foreground" />
-            <Arrow className="absolute -right-32 top-10 w-24 hidden md:block" style={{ color: RED }} />
+          <div className="relative mx-auto flex items-center justify-center gap-6 md:gap-16 max-w-3xl">
+            <img src={logo} alt="SAVGLACÉ mark" className="flex-shrink-0 w-40 md:w-48 [&_path]:fill-foreground" />
+
+            {/* Arrow pointing from label back to logo */}
+            <svg
+              className="absolute left-[42%] right-[28%] top-[30%] h-12 hidden md:block pointer-events-none"
+              viewBox="0 0 200 60"
+              preserveAspectRatio="none"
+              fill="none"
+              stroke={RED}
+              strokeWidth="3"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="M 190 15 Q 130 60, 60 30 T 15 25" />
+              <path d="M 28 14 L 12 24 L 24 38" />
+            </svg>
+
             <span
-              className="absolute -right-28 -top-4 font-marker text-xl rotate-[8deg] hidden md:inline whitespace-nowrap"
+              className="flex-shrink-0 font-marker text-2xl md:text-3xl rotate-[-6deg] hidden md:inline-block whitespace-nowrap"
               style={{ color: RED }}
             >
               that's us!
             </span>
           </div>
+
 
           <h1 className="mt-8 font-display text-3xl sm:text-5xl md:text-7xl font-bold leading-[1.05] md:leading-[0.95]">
             <span className="inline-block border border-dashed border-foreground/40 px-2 py-1">SAVGLACÉ</span>
