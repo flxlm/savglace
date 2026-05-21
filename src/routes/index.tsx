@@ -353,6 +353,12 @@ function Index() {
         <Heart className="absolute bottom-12 left-[3%] w-10 hidden md:block rotate-[-10deg]" style={{ color: RED }} />
         <Lightning className="absolute top-24 right-[36%] w-8 hidden md:block" style={{ color: RED }} />
 
+        {/* mobile-only doodles */}
+        <Heart className="absolute md:hidden top-8 right-2 w-7 rotate-[8deg]" style={{ color: RED }} />
+        <Sparkle className="absolute md:hidden bottom-6 right-3 w-6" style={{ color: RED }} />
+        <Spiral className="absolute md:hidden bottom-10 left-2 w-8 text-foreground" />
+
+
         <div className="mx-auto max-w-6xl">
           <div className="mb-12 flex items-baseline gap-4">
             <h2 className="font-display text-4xl md:text-5xl font-bold">The Menu</h2>
