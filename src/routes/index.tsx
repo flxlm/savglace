@@ -146,30 +146,14 @@ const CheckLabel = ({
 );
 
 function Index() {
-const marqueeItems = ["Shaved Ice", "Est. 2026", "Open during the summer", "1–7pm", "780 Brewster Avenue"];
+  const marqueeItems = ["Shaved Ice", "Est. 2026", "Open during the summer", "1–7pm", "780 Brewster Avenue"];
+  const loop = [...marqueeItems, ...marqueeItems];
 
-return (
-  <main className="relative min-h-screen overflow-x-hidden bg-background text-foreground">
-    {/* ...your other content... */}
-
-    <div className="overflow-hidden whitespace-nowrap">
-      <div className="inline-flex animate-marquee">
-        {/* First copy */}
-        {marqueeItems.map((item, i) => (
-          <span key={`a-${i}`} className="mx-8 text-4xl font-bold">
-            {item} <span className="mx-4">·</span>
-          </span>
-        ))}
-        {/* Second copy — identical, for the seamless handoff */}
-        {marqueeItems.map((item, i) => (
-          <span key={`b-${i}`} className="mx-8 text-4xl font-bold" aria-hidden="true">
-            {item} <span className="mx-4">·</span>
-          </span>
-        ))}
-      </div>
-    </div>
-  </main>
-);
+  return (
+    <main className="relative min-h-screen overflow-x-hidden bg-background text-foreground">
+      {/* TOP BAR */}
+      <div className="flex items-center justify-between px-8 pt-6 text-xs uppercase tracking-widest">
+        <p>est. 2026 · walk-in only</p>
         <a href="mailto:hello@savglace.com?subject=Hello&body=Hi there!" className="underline underline-offset-2">
           hello@savglace.com
         </a>
