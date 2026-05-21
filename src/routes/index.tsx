@@ -166,7 +166,7 @@ function Index() {
 
       {/* scattered top doodles + checkboxes (desktop only — too crowded on mobile) */}
       <CheckLabel label="COLD" className="hidden md:flex top-20 left-[24%] rotate-[-4deg]" />
-      <CheckLabel label="FRUITY" className="hidden md:flex top-28 right-[18%] rotate-[3deg]" />
+      <CheckLabel label="FRUITY" className="hidden md:flex top-16 right-[6%] rotate-[3deg]" />
       <CheckLabel label="SWEET" className="hidden md:flex top-[210px] left-[32%] rotate-[-2deg]" />
       <CheckLabel label="HOT" checked={false} className="hidden md:flex top-[230px] right-[10%] rotate-[2deg]" />
 
