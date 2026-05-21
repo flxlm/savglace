@@ -115,8 +115,8 @@ const Arrow = ({ className = "", style }: DoodleProps) => (
     strokeLinecap="round"
     strokeLinejoin="round"
   >
-    <path d="M8 40 Q40 8 80 30 T112 26" />
-    <path d="M102 18 L112 26 L104 36" />
+    <path d="M8 40 Q40 8 80 30 T112 25" />
+    <path d="M101 36 L112 25 L122 36" />
   </svg>
 );
 
