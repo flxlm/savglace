@@ -72,14 +72,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "SAVGLACÉ — Shaved Ice" },
+      { title: "SAVGLACÉ — Shaved Ice Shop" },
       { name: "description", content: "Four flavors of hand-shaved ice. A first season menu." },
       { name: "author", content: "SAVGLACÉ" },
-      { property: "og:title", content: "SAVGLACÉ — Shaved Ice" },
-      { property: "og:description", content: "Four flavors of hand-shaved ice." },
+      { property: "og:title", content: "SAVGLACÉ — Shaved Ice Shop" },
+      { property: "og:description", content: "Four flavors of hand-shaved ice. A first season menu." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "SAVGLACÉ — Shaved Ice Shop" },
+      { name: "twitter:description", content: "Four flavors of hand-shaved ice. A first season menu." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/1f9ae05a-d090-4c57-ae0c-a2a8df1ca171/id-preview-b1249879--669c37f1-28eb-46c8-8812-0968e5fb0b36.lovable.app-1779382106312.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/1f9ae05a-d090-4c57-ae0c-a2a8df1ca171/id-preview-b1249879--669c37f1-28eb-46c8-8812-0968e5fb0b36.lovable.app-1779382106312.png" },
     ],
     links: [
       {
