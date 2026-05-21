@@ -261,7 +261,7 @@ function Index() {
         </a>
       </div>
 
-      {/* scattered top doodles + checkboxes (desktop only — too crowded on mobile) */}
+      {/* scattered top doodles + checkboxes (desktop) */}
       <CheckLabel label="COLD" className="hidden md:flex top-20 left-[24%] rotate-[-4deg]" />
       <CheckLabel label="FRUITY" className="hidden md:flex top-16 right-[6%] rotate-[3deg]" />
       <CheckLabel label="SWEET" className="hidden md:flex top-[210px] left-[32%] rotate-[-2deg]" />
@@ -274,6 +274,14 @@ function Index() {
       <Sun className="absolute top-[180px] right-[22%] w-12 text-foreground hidden md:block rotate-[12deg]" />
       <Spiral className="absolute top-[340px] left-[5%] w-14 hidden md:block" style={{ color: RED }} />
       <Drop className="absolute top-[120px] left-[18%] w-8 hidden md:block rotate-[15deg]" style={{ color: RED }} />
+
+      {/* scattered top doodles (mobile only — fewer, edge-hugging) */}
+      <CheckLabel label="COLD" className="flex md:hidden top-[70px] left-3 rotate-[-4deg] text-xl" />
+      <CheckLabel label="SWEET" className="flex md:hidden top-[100px] right-3 rotate-[3deg] text-xl" />
+      <Star className="absolute md:hidden top-[60px] right-[42%] w-6" style={{ color: RED }} />
+      <Sparkle className="absolute md:hidden top-[130px] left-[42%] w-5" style={{ color: RED }} />
+      <Squiggle className="absolute md:hidden top-[150px] right-2 w-14 rotate-[-6deg] text-foreground" />
+
 
       {/* HERO */}
       <section className="relative pt-32 pb-12">
