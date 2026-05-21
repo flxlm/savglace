@@ -191,8 +191,8 @@ function Index() {
               strokeLinecap="round"
               strokeLinejoin="round"
             >
-              <path d="M 280 60 Q 200 10, 100 40 T 20 70" />
-              <path d="M 35 60 L 20 70 L 35 80" />
+              <path d="M 280 80 Q 200 10, 62 52" />
+              <path d="M 78 42 L 60 52 L 72 64" />
             </svg>
 
             <span
@@ -202,7 +202,6 @@ function Index() {
               that's us!
             </span>
           </div>
-
 
           <h1 className="mt-8 font-display text-3xl sm:text-5xl md:text-7xl font-bold leading-[1.05] md:leading-[0.95]">
             <span className="inline-block border border-dashed border-foreground/40 px-2 py-1">SAVGLACÉ</span>
