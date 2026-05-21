@@ -147,7 +147,7 @@ const CheckLabel = ({
 
 function Index() {
   const marqueeItems = ["Shaved Ice", "Est. 2026", "Open during the summer", "1–7pm", "780 Brewster Avenue"];
-  const loop = [...marqueeItems, ...marqueeItems];
+
 
 
   return (
