@@ -282,7 +282,6 @@ function Index() {
       <Sparkle className="absolute md:hidden top-[130px] left-[42%] w-5" style={{ color: RED }} />
       <Squiggle className="absolute md:hidden top-[150px] right-2 w-14 rotate-[-6deg] text-foreground" />
 
-
       {/* HERO */}
       <section className="relative pt-32 pb-12">
         <div className="mx-auto max-w-5xl px-8 text-center">
@@ -315,14 +314,15 @@ function Index() {
           <h1 className="mt-8 font-display text-3xl sm:text-5xl md:text-7xl font-bold leading-[1.05] md:leading-[0.95]">
             <span className="inline-block border border-dashed border-foreground/40 px-2 py-1">SAVGLACÉ</span>
             <span style={{ color: RED }}>.</span> is a{" "}
-            <span className="inline-block border border-dashed border-foreground/40 px-2 py-1">tiny</span> shaved
+            <span className="inline-block border border-dashed border-foreground/40 px-2 py-1">pop-up</span> shaved
             <br />
             ice shop. We serve{" "}
-            <span className="inline-block border border-dashed border-foreground/40 px-2 py-1">four</span> flavors that{" "}
+            <span className="inline-block border border-dashed border-foreground/40 px-2 py-1">original</span> flavors
+            that{" "}
             <span className="font-marker text-4xl sm:text-6xl md:text-8xl align-middle" style={{ color: RED }}>
-              melt
+              cools
             </span>{" "}
-            slowly.
+            you nicely.
           </h1>
         </div>
       </section>
@@ -357,7 +357,6 @@ function Index() {
         <Heart className="absolute md:hidden top-8 right-2 w-7 rotate-[8deg]" style={{ color: RED }} />
         <Sparkle className="absolute md:hidden bottom-6 right-3 w-6" style={{ color: RED }} />
         <Spiral className="absolute md:hidden bottom-10 left-2 w-8 text-foreground" />
-
 
         <div className="mx-auto max-w-6xl">
           <div className="mb-12 flex items-baseline gap-4">
@@ -395,7 +394,6 @@ function Index() {
         <Star className="absolute md:hidden top-2 right-3 w-6" style={{ color: RED }} />
         <Squiggle className="absolute md:hidden bottom-4 left-2 w-16 -rotate-6 text-foreground" />
 
-
         <div className="mx-auto max-w-3xl text-center">
           <p className="text-sm mb-3">I want a flavor on the menu:</p>
           <div className="mx-auto flex max-w-md flex-col sm:flex-row items-stretch sm:items-center gap-2 border-2 border-dashed border-foreground/60 p-3">
@@ -429,7 +427,6 @@ function Index() {
         <Sparkle className="absolute md:hidden top-6 left-3 w-6" style={{ color: RED }} />
         <Smiley className="absolute md:hidden bottom-6 right-2 w-10" style={{ color: RED }} />
         <Spiral className="absolute md:hidden bottom-8 left-2 w-8 text-foreground" />
-
 
         <div className="mx-auto max-w-5xl">
           <div className="mb-14 flex items-baseline gap-4">
@@ -488,7 +485,6 @@ function Index() {
         <Cloud className="absolute md:hidden top-0 right-3 w-12 text-foreground" />
         <Smiley className="absolute md:hidden bottom-2 right-3 w-10" style={{ color: RED }} />
         <Drop className="absolute md:hidden bottom-4 left-3 w-5 rotate-[-12deg]" style={{ color: RED }} />
-
       </section>
 
       {/* FOOTER */}
