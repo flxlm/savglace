@@ -107,9 +107,9 @@ function Index() {
           <h1 className="mt-8 font-display text-5xl md:text-7xl font-bold leading-[0.95]">
             <span className="inline-block border border-dashed border-foreground/40 px-2 py-1">SAVGLACÉ</span>
             <span style={{ color: RED }}>.</span>{" "}
-            is a <span className="inline-block border border-dashed border-foreground/40 px-2 py-1">tiny</span> shaved ice
+            is a <span className="inline-block border border-dashed border-foreground/40 px-2 py-1">tiny</span> shaved
             <br />
-            shop. We serve <span className="inline-block border border-dashed border-foreground/40 px-2 py-1">four</span> flavors
+            ice shop. We serve <span className="inline-block border border-dashed border-foreground/40 px-2 py-1">four</span> flavors
             that <span className="font-marker text-6xl md:text-8xl align-middle" style={{ color: RED }}>melt</span> slowly.
           </h1>
         </div>
