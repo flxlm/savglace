@@ -261,7 +261,7 @@ function Index() {
         </a>
       </div>
 
-      {/* scattered top doodles + checkboxes (desktop only — too crowded on mobile) */}
+      {/* scattered top doodles + checkboxes (desktop) */}
       <CheckLabel label="COLD" className="hidden md:flex top-20 left-[24%] rotate-[-4deg]" />
       <CheckLabel label="FRUITY" className="hidden md:flex top-16 right-[6%] rotate-[3deg]" />
       <CheckLabel label="SWEET" className="hidden md:flex top-[210px] left-[32%] rotate-[-2deg]" />
@@ -274,6 +274,14 @@ function Index() {
       <Sun className="absolute top-[180px] right-[22%] w-12 text-foreground hidden md:block rotate-[12deg]" />
       <Spiral className="absolute top-[340px] left-[5%] w-14 hidden md:block" style={{ color: RED }} />
       <Drop className="absolute top-[120px] left-[18%] w-8 hidden md:block rotate-[15deg]" style={{ color: RED }} />
+
+      {/* scattered top doodles (mobile only — fewer, edge-hugging) */}
+      <CheckLabel label="COLD" className="flex md:hidden top-[70px] left-3 rotate-[-4deg] text-xl" />
+      <CheckLabel label="SWEET" className="flex md:hidden top-[100px] right-3 rotate-[3deg] text-xl" />
+      <Star className="absolute md:hidden top-[60px] right-[42%] w-6" style={{ color: RED }} />
+      <Sparkle className="absolute md:hidden top-[130px] left-[42%] w-5" style={{ color: RED }} />
+      <Squiggle className="absolute md:hidden top-[150px] right-2 w-14 rotate-[-6deg] text-foreground" />
+
 
       {/* HERO */}
       <section className="relative pt-32 pb-12">
@@ -345,6 +353,12 @@ function Index() {
         <Heart className="absolute bottom-12 left-[3%] w-10 hidden md:block rotate-[-10deg]" style={{ color: RED }} />
         <Lightning className="absolute top-24 right-[36%] w-8 hidden md:block" style={{ color: RED }} />
 
+        {/* mobile-only doodles */}
+        <Heart className="absolute md:hidden top-8 right-2 w-7 rotate-[8deg]" style={{ color: RED }} />
+        <Sparkle className="absolute md:hidden bottom-6 right-3 w-6" style={{ color: RED }} />
+        <Spiral className="absolute md:hidden bottom-10 left-2 w-8 text-foreground" />
+
+
         <div className="mx-auto max-w-6xl">
           <div className="mb-12 flex items-baseline gap-4">
             <h2 className="font-display text-4xl md:text-5xl font-bold">The Menu</h2>
@@ -377,6 +391,11 @@ function Index() {
         <TicTac className="absolute right-[8%] -top-4 w-24 text-foreground hidden md:block" />
         <Star className="absolute left-[12%] top-10 w-8 hidden md:block" style={{ color: RED }} />
 
+        {/* mobile-only */}
+        <Star className="absolute md:hidden top-2 right-3 w-6" style={{ color: RED }} />
+        <Squiggle className="absolute md:hidden bottom-4 left-2 w-16 -rotate-6 text-foreground" />
+
+
         <div className="mx-auto max-w-3xl text-center">
           <p className="text-sm mb-3">I want a flavor on the menu:</p>
           <div className="mx-auto flex max-w-md flex-col sm:flex-row items-stretch sm:items-center gap-2 border-2 border-dashed border-foreground/60 p-3">
@@ -404,6 +423,13 @@ function Index() {
         <Spiral className="absolute top-8 left-[40%] w-12 text-foreground hidden md:block" />
         <Sparkle className="absolute bottom-20 left-[20%] w-10 hidden md:block" style={{ color: RED }} />
         <Sun className="absolute bottom-32 right-[30%] w-10 hidden md:block" style={{ color: RED }} />
+
+        {/* mobile-only */}
+        <Star className="absolute md:hidden top-4 right-3 w-6" style={{ color: RED }} />
+        <Sparkle className="absolute md:hidden top-6 left-3 w-6" style={{ color: RED }} />
+        <Smiley className="absolute md:hidden bottom-6 right-2 w-10" style={{ color: RED }} />
+        <Spiral className="absolute md:hidden bottom-8 left-2 w-8 text-foreground" />
+
 
         <div className="mx-auto max-w-5xl">
           <div className="mb-14 flex items-baseline gap-4">
@@ -456,6 +482,13 @@ function Index() {
         <Heart className="absolute top-2 left-[30%] w-8 hidden md:block" style={{ color: RED }} />
         <Cloud className="absolute top-0 right-[28%] w-16 text-foreground hidden md:block" />
         <Drop className="absolute bottom-20 right-[20%] w-6 hidden md:block rotate-[-12deg]" style={{ color: RED }} />
+
+        {/* mobile-only */}
+        <Heart className="absolute md:hidden top-0 left-3 w-6" style={{ color: RED }} />
+        <Cloud className="absolute md:hidden top-0 right-3 w-12 text-foreground" />
+        <Smiley className="absolute md:hidden bottom-2 right-3 w-10" style={{ color: RED }} />
+        <Drop className="absolute md:hidden bottom-4 left-3 w-5 rotate-[-12deg]" style={{ color: RED }} />
+
       </section>
 
       {/* FOOTER */}
