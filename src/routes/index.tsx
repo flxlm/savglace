@@ -271,6 +271,11 @@ function Index() {
       <Squiggle className="absolute top-12 left-[8%] w-24 text-foreground rotate-[-8deg] hidden md:block" />
       <Star className="absolute top-[260px] left-[14%] w-10 hidden md:block" style={{ color: RED }} />
       <TicTac className="absolute top-[300px] right-[6%] w-20 text-foreground hidden md:block" />
+      <Sparkle className="absolute top-[90px] left-[44%] w-8 hidden md:block" style={{ color: RED }} />
+      <Sun className="absolute top-[180px] right-[22%] w-12 text-foreground hidden md:block rotate-[12deg]" />
+      <Spiral className="absolute top-[340px] left-[5%] w-14 hidden md:block" style={{ color: RED }} />
+      <Drop className="absolute top-[120px] left-[18%] w-8 hidden md:block rotate-[15deg]" style={{ color: RED }} />
+
 
       {/* HERO */}
       <section className="relative pt-32 pb-12">
