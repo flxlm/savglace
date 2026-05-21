@@ -146,9 +146,7 @@ const CheckLabel = ({
 );
 
 function Index() {
-  const marqueeItems = ["Shaved Ice", "Est. 2026", "Open during the summer", "1–7pm", "780 Brewster Avenue"];
-
-
+  const marqueeItems = ["Shaved Ice", "Est. 2026", "ONLY Open during the summer", "1–7pm", "780 Brewster Avenue"];
 
   return (
     <main className="relative min-h-screen overflow-x-hidden bg-background text-foreground">
@@ -231,7 +229,6 @@ function Index() {
           ))}
         </div>
       </section>
-
 
       {/* FLAVORS */}
       <section className="relative px-8 pt-20 pb-24">
