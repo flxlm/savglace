@@ -177,30 +177,31 @@ function Index() {
       {/* HERO */}
       <section className="relative pt-32 pb-12">
         <div className="mx-auto max-w-5xl px-8 text-center">
-          <div className="relative mx-auto flex items-center justify-center gap-6 md:gap-16 max-w-3xl">
-            <img src={logo} alt="SAVGLACÉ mark" className="flex-shrink-0 w-40 md:w-48 [&_path]:fill-foreground" />
+          <div className="relative mx-auto max-w-3xl flex items-center justify-center">
+            <img src={logo} alt="SAVGLACÉ mark" className="w-40 md:w-48 [&_path]:fill-foreground" />
 
-            {/* Arrow pointing from "that's us!" back to logo */}
-            <svg
-              className="absolute left-[45%] right-[20%] top-[20%] h-1/2 hidden md:block pointer-events-none"
-              viewBox="0 0 300 120"
-              preserveAspectRatio="xMidYMid meet"
-              fill="none"
-              stroke={RED}
-              strokeWidth="3"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <path d="M 280 80 Q 200 10, 62 52" />
-              <path d="M 78 42 L 60 52 L 72 64" />
-            </svg>
-
-            <span
-              className="flex-shrink-0 font-marker text-2xl md:text-3xl rotate-[-6deg] hidden md:inline-block whitespace-nowrap"
-              style={{ color: RED }}
-            >
-              that's us!
-            </span>
+            {/* Arrow + label, absolutely placed to the right of the centered logo */}
+            <div className="hidden md:flex absolute left-1/2 top-1/2 -translate-y-1/2 ml-28 lg:ml-36 items-center gap-1 pointer-events-none">
+              <svg
+                className="w-28 lg:w-36 h-14"
+                viewBox="0 0 300 120"
+                preserveAspectRatio="xMidYMid meet"
+                fill="none"
+                stroke={RED}
+                strokeWidth="3"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="M 280 80 Q 200 10, 62 52" />
+                <path d="M 78 42 L 60 52 L 72 64" />
+              </svg>
+              <span
+                className="font-marker text-2xl md:text-3xl rotate-[-6deg] whitespace-nowrap"
+                style={{ color: RED }}
+              >
+                that's us!
+              </span>
+            </div>
           </div>
 
           <h1 className="mt-8 font-display text-3xl sm:text-5xl md:text-7xl font-bold leading-[1.05] md:leading-[0.95]">
