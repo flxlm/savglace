@@ -457,6 +457,10 @@ function Index() {
         </p>
         <Arrow className="absolute bottom-10 left-[10%] w-24 rotate-[170deg] hidden md:block" style={{ color: RED }} />
         <Smiley className="absolute bottom-6 right-[10%] w-16 hidden md:block" style={{ color: RED }} />
+        <Heart className="absolute top-2 left-[30%] w-8 hidden md:block" style={{ color: RED }} />
+        <Cloud className="absolute top-0 right-[28%] w-16 text-foreground hidden md:block" />
+        <Drop className="absolute bottom-20 right-[20%] w-6 hidden md:block rotate-[-12deg]" style={{ color: RED }} />
+
       </section>
 
       {/* FOOTER */}
