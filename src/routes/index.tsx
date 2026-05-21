@@ -391,6 +391,11 @@ function Index() {
         <TicTac className="absolute right-[8%] -top-4 w-24 text-foreground hidden md:block" />
         <Star className="absolute left-[12%] top-10 w-8 hidden md:block" style={{ color: RED }} />
 
+        {/* mobile-only */}
+        <Star className="absolute md:hidden top-2 right-3 w-6" style={{ color: RED }} />
+        <Squiggle className="absolute md:hidden bottom-4 left-2 w-16 -rotate-6 text-foreground" />
+
+
         <div className="mx-auto max-w-3xl text-center">
           <p className="text-sm mb-3">I want a flavor on the menu:</p>
           <div className="mx-auto flex max-w-md flex-col sm:flex-row items-stretch sm:items-center gap-2 border-2 border-dashed border-foreground/60 p-3">
