@@ -270,14 +270,7 @@ function Index() {
               Send ✉
             </button>
           </div>
-
-          <p className="mt-10 font-marker text-3xl rotate-[-2deg] inline-block" style={{ color: RED }}>
-            see you at the shop ☺
-          </p>
         </div>
-
-        <Arrow className="absolute bottom-10 left-[10%] w-24 rotate-[170deg] hidden md:block" style={{ color: RED }} />
-        <Smiley className="absolute bottom-6 right-[10%] w-16 hidden md:block" style={{ color: RED }} />
       </section>
 
       {/* EXPERIMENTAL ITEMS */}
@@ -325,6 +318,15 @@ function Index() {
             ))}
           </div>
         </div>
+      </section>
+
+      {/* CLOSING NOTE */}
+      <section className="relative px-8 pb-20 text-center">
+        <p className="font-marker text-3xl rotate-[-2deg] inline-block" style={{ color: RED }}>
+          see you at the shop ☺
+        </p>
+        <Arrow className="absolute bottom-10 left-[10%] w-24 rotate-[170deg] hidden md:block" style={{ color: RED }} />
+        <Smiley className="absolute bottom-6 right-[10%] w-16 hidden md:block" style={{ color: RED }} />
       </section>
 
       {/* FOOTER */}
