@@ -45,11 +45,10 @@ function Index() {
         <header className="flex items-start justify-between gap-8 border-b border-foreground/20 pb-6 text-[11px] uppercase tracking-[0.18em]">
           <div className="space-y-1">
             <p>Shaved Ice · Est. 2026</p>
-            <p className="text-foreground/60">Open Wed–Sun · 12–9pm</p>
+            <p className="text-foreground/60">Open during the summer · 1–7pm</p>
           </div>
           <div className="text-right space-y-1">
-            <p>14 Linden Ave</p>
-            <p className="text-foreground/60">+1 (555) 014–2210</p>
+            <p>780 Brewster Avenue</p>
           </div>
         </header>
 
@@ -60,8 +59,7 @@ function Index() {
               저기요<span className="text-[color:var(--accent-rose)]">.</span>
             </h1>
             <p className="mt-6 max-w-md text-sm leading-relaxed text-foreground/70">
-              Four flavors. Hand-shaved ice, slow syrups, quiet rooms.
-              A first season menu.
+              Four flavors. Hand-shaved ice, slow syrups, quiet rooms. A first season menu.
             </p>
           </div>
           <div className="col-span-12 md:col-span-5 flex md:justify-end items-start">
@@ -89,9 +87,7 @@ function Index() {
         <section className="mt-24 grid grid-cols-12 gap-6 border-t border-foreground/20 pt-10">
           <div className="col-span-12 md:col-span-4">
             <h2 className="text-3xl tracking-tight">Menu</h2>
-            <p className="mt-3 text-xs uppercase tracking-[0.2em] text-foreground/50">
-              Spring / Summer
-            </p>
+            <p className="mt-3 text-xs uppercase tracking-[0.2em] text-foreground/50">Spring / Summer</p>
           </div>
           <ol className="col-span-12 md:col-span-8 grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-3 text-sm">
             {flavors.map((f) => (
