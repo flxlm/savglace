@@ -16,8 +16,10 @@ const flavors = [
 const RED = "var(--accent-rose)";
 
 // little hand-drawn doodles
-const Smiley = ({ className = "" }: { className?: string }) => (
-  <svg viewBox="0 0 100 100" className={className} fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+type DoodleProps = { className?: string; style?: React.CSSProperties };
+
+const Smiley = ({ className = "", style }: DoodleProps) => (
+  <svg viewBox="0 0 100 100" className={className} style={style} fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
     <circle cx="50" cy="50" r="42" />
     <circle cx="36" cy="42" r="3" fill="currentColor" />
     <circle cx="64" cy="42" r="3" fill="currentColor" />
@@ -25,8 +27,8 @@ const Smiley = ({ className = "" }: { className?: string }) => (
   </svg>
 );
 
-const TicTac = ({ className = "" }: { className?: string }) => (
-  <svg viewBox="0 0 100 100" className={className} fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round">
+const TicTac = ({ className = "", style }: DoodleProps) => (
+  <svg viewBox="0 0 100 100" className={className} style={style} fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round">
     <path d="M35 8 V92 M65 8 V92 M8 35 H92 M8 65 H92" />
     <circle cx="22" cy="22" r="9" />
     <path d="M44 14 L56 30 M56 14 L44 30" />
@@ -36,24 +38,25 @@ const TicTac = ({ className = "" }: { className?: string }) => (
   </svg>
 );
 
-const Squiggle = ({ className = "" }: { className?: string }) => (
-  <svg viewBox="0 0 120 30" className={className} fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round">
+const Squiggle = ({ className = "", style }: DoodleProps) => (
+  <svg viewBox="0 0 120 30" className={className} style={style} fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round">
     <path d="M4 15 Q18 2 32 15 T60 15 T88 15 T116 15" />
   </svg>
 );
 
-const Star = ({ className = "" }: { className?: string }) => (
-  <svg viewBox="0 0 60 60" className={className} fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+const Star = ({ className = "", style }: DoodleProps) => (
+  <svg viewBox="0 0 60 60" className={className} style={style} fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
     <path d="M30 6 L36 24 L54 26 L40 38 L44 56 L30 46 L16 56 L20 38 L6 26 L24 24 Z" />
   </svg>
 );
 
-const Arrow = ({ className = "" }: { className?: string }) => (
-  <svg viewBox="0 0 120 60" className={className} fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+const Arrow = ({ className = "", style }: DoodleProps) => (
+  <svg viewBox="0 0 120 60" className={className} style={style} fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
     <path d="M8 40 Q40 8 80 30 T112 26" />
     <path d="M102 18 L112 26 L104 36" />
   </svg>
 );
+
 
 const CheckLabel = ({ label, checked = true, className = "", style }: { label: string; checked?: boolean; className?: string; style?: React.CSSProperties }) => (
   <div className={`absolute flex items-center gap-2 font-marker text-2xl md:text-3xl ${className}`} style={{ color: RED, ...style }}>
