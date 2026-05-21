@@ -249,6 +249,37 @@ function Index() {
         </div>
       </section>
 
+      {/* CONTACT WIDGETS */}
+      <section className="relative px-8 pb-24">
+        <TicTac className="absolute right-[8%] -top-4 w-24 text-foreground hidden md:block" />
+        <Star className="absolute left-[12%] top-10 w-8 hidden md:block" style={{ color: RED }} />
+
+        <div className="mx-auto max-w-3xl text-center">
+          <p className="text-sm mb-3">I want a flavor on the menu:</p>
+          <div className="mx-auto flex max-w-md flex-col sm:flex-row items-stretch sm:items-center gap-2 border-2 border-dashed border-foreground/60 p-3">
+            <input
+              type="text"
+              placeholder="watermelon-basil…"
+              className="flex-1 min-w-0 bg-transparent font-marker text-2xl outline-none placeholder:text-foreground/30"
+            />
+            <button
+              className="px-4 py-1.5 text-sm font-medium text-white shrink-0"
+              style={{ backgroundColor: "#3b82f6" }}
+              type="button"
+            >
+              Send ✉
+            </button>
+          </div>
+
+          <p className="mt-10 font-marker text-3xl rotate-[-2deg] inline-block" style={{ color: RED }}>
+            see you at the shop ☺
+          </p>
+        </div>
+
+        <Arrow className="absolute bottom-10 left-[10%] w-24 rotate-[170deg] hidden md:block" style={{ color: RED }} />
+        <Smiley className="absolute bottom-6 right-[10%] w-16 hidden md:block" style={{ color: RED }} />
+      </section>
+
       {/* EXPERIMENTAL ITEMS */}
       <section className="relative px-8 pt-16 pb-24">
         <Star className="absolute top-4 right-[12%] w-10 hidden md:block" style={{ color: RED }} />
@@ -294,37 +325,6 @@ function Index() {
             ))}
           </div>
         </div>
-      </section>
-
-      {/* CONTACT WIDGETS */}
-      <section className="relative px-8 pb-32">
-        <TicTac className="absolute right-[8%] -top-4 w-24 text-foreground hidden md:block" />
-        <Star className="absolute left-[12%] top-10 w-8 hidden md:block" style={{ color: RED }} />
-
-        <div className="mx-auto max-w-3xl text-center">
-          <p className="text-sm mb-3">I want a flavor on the menu:</p>
-          <div className="mx-auto flex max-w-md flex-col sm:flex-row items-stretch sm:items-center gap-2 border-2 border-dashed border-foreground/60 p-3">
-            <input
-              type="text"
-              placeholder="watermelon-basil…"
-              className="flex-1 min-w-0 bg-transparent font-marker text-2xl outline-none placeholder:text-foreground/30"
-            />
-            <button
-              className="px-4 py-1.5 text-sm font-medium text-white shrink-0"
-              style={{ backgroundColor: "#3b82f6" }}
-              type="button"
-            >
-              Send ✉
-            </button>
-          </div>
-
-          <p className="mt-10 font-marker text-3xl rotate-[-2deg] inline-block" style={{ color: RED }}>
-            see you at the shop ☺
-          </p>
-        </div>
-
-        <Arrow className="absolute bottom-10 left-[10%] w-24 rotate-[170deg] hidden md:block" style={{ color: RED }} />
-        <Smiley className="absolute bottom-6 right-[10%] w-16 hidden md:block" style={{ color: RED }} />
       </section>
 
       {/* FOOTER */}
