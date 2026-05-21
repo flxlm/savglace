@@ -11,28 +11,24 @@ const flavors = [
     num: "01",
     variant: "strawberry" as const,
     name: "Strawberry Snow",
-    kr: "딸기 빙수",
     desc: "Ripe strawberries, condensed milk, fresh cream.",
   },
   {
     num: "02",
     variant: "matcha" as const,
     name: "Matcha Cloud",
-    kr: "말차 빙수",
     desc: "Uji matcha, sweet red bean, toasted mochi.",
   },
   {
     num: "03",
     variant: "mango" as const,
     name: "Mango Sun",
-    kr: "망고 빙수",
     desc: "Alphonso mango, passionfruit syrup, lime zest.",
   },
   {
     num: "04",
     variant: "blueberry" as const,
     name: "Blueberry Frost",
-    kr: "블루베리 빙수",
     desc: "Wild blueberries, lemon curd, vanilla bean.",
   },
 ];
@@ -243,9 +239,6 @@ function Index() {
                 </div>
                 <div>
                   <p className="font-display text-lg font-bold">{f.name}</p>
-                  <p className="font-marker text-xl -mt-1" style={{ color: RED }}>
-                    {f.kr}
-                  </p>
                   <p className="text-xs text-foreground/70 mt-2">{f.desc}</p>
                 </div>
               </article>
