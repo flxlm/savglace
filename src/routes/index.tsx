@@ -424,6 +424,13 @@ function Index() {
         <Sparkle className="absolute bottom-20 left-[20%] w-10 hidden md:block" style={{ color: RED }} />
         <Sun className="absolute bottom-32 right-[30%] w-10 hidden md:block" style={{ color: RED }} />
 
+        {/* mobile-only */}
+        <Star className="absolute md:hidden top-4 right-3 w-6" style={{ color: RED }} />
+        <Sparkle className="absolute md:hidden top-6 left-3 w-6" style={{ color: RED }} />
+        <Smiley className="absolute md:hidden bottom-6 right-2 w-10" style={{ color: RED }} />
+        <Spiral className="absolute md:hidden bottom-8 left-2 w-8 text-foreground" />
+
+
         <div className="mx-auto max-w-5xl">
           <div className="mb-14 flex items-baseline gap-4">
             <h2 className="font-display text-4xl md:text-5xl font-bold">Experimental Items</h2>
