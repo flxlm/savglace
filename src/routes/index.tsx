@@ -154,7 +154,7 @@ function Index() {
       {/* email tag, top-left */}
       <div className="absolute left-6 top-6 z-20 flex items-center gap-2 text-sm">
         <div
-          className="h-8 w-8 border-2 border-foreground/80 flex items-center justify-center text-[10px] font-marker"
+          className="h-9 w-9 border-2 border-foreground/80 flex items-center justify-center text-xl leading-none"
           style={{ color: RED }}
         >
           ✉
