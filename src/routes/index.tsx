@@ -171,7 +171,7 @@ function Index() {
       <CheckLabel label="HOT" checked={false} className="hidden md:flex top-[230px] right-[10%] rotate-[2deg]" />
 
       <Squiggle className="absolute top-12 left-[8%] w-24 text-foreground rotate-[-8deg] hidden md:block" />
-      <Star className="absolute top-[170px] right-[34%] w-10 hidden md:block" style={{ color: RED }} />
+      <Star className="absolute top-[260px] left-[14%] w-10 hidden md:block" style={{ color: RED }} />
       <TicTac className="absolute top-[300px] right-[6%] w-20 text-foreground hidden md:block" />
 
       {/* HERO */}
