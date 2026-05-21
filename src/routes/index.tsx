@@ -287,7 +287,7 @@ function Index() {
             </span>
           </div>
 
-          <div className="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-12 md:gap-y-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10 md:gap-y-12 items-stretch">
             {[
               {
                 num: "A",
@@ -304,10 +304,10 @@ function Index() {
                 name: "Yuzu Ginger Shave",
                 desc: "Yuzu curd, candied ginger, honey drizzle. Sharp, bright, refreshing.",
               },
-            ].map((item, i) => (
+            ].map((item) => (
               <article
                 key={item.num}
-                className={`relative border-2 border-dashed border-foreground/50 p-6 ${i === 1 ? "md:mt-8" : ""}`}
+                className="relative h-full min-h-[180px] border-2 border-dashed border-foreground/50 p-6 flex flex-col"
               >
                 <p className="font-marker text-2xl absolute -top-4 left-4 px-2 bg-background" style={{ color: RED }}>
                   {item.num}.
