@@ -166,14 +166,14 @@ function Index() {
         <span className="underline underline-offset-2">hello@jogiyo.cafe</span>
       </div>
 
-      {/* scattered top doodles + checkboxes */}
-      <CheckLabel label="COLD" className="top-20 left-[24%] rotate-[-4deg]" />
-      <CheckLabel label="FRUITY" className="top-28 right-[18%] rotate-[3deg]" />
-      <CheckLabel label="SWEET" className="top-[210px] left-[32%] rotate-[-2deg]" />
-      <CheckLabel label="HOT" checked={false} className="top-[230px] right-[10%] rotate-[2deg]" />
+      {/* scattered top doodles + checkboxes (desktop only — too crowded on mobile) */}
+      <CheckLabel label="COLD" className="hidden md:flex top-20 left-[24%] rotate-[-4deg]" />
+      <CheckLabel label="FRUITY" className="hidden md:flex top-28 right-[18%] rotate-[3deg]" />
+      <CheckLabel label="SWEET" className="hidden md:flex top-[210px] left-[32%] rotate-[-2deg]" />
+      <CheckLabel label="HOT" checked={false} className="hidden md:flex top-[230px] right-[10%] rotate-[2deg]" />
 
-      <Squiggle className="absolute top-12 left-[8%] w-24 text-foreground rotate-[-8deg]" />
-      <Star className="absolute top-[170px] right-[34%] w-10" style={{ color: RED }} />
+      <Squiggle className="absolute top-12 left-[8%] w-24 text-foreground rotate-[-8deg] hidden md:block" />
+      <Star className="absolute top-[170px] right-[34%] w-10 hidden md:block" style={{ color: RED }} />
       <TicTac className="absolute top-[300px] right-[6%] w-20 text-foreground hidden md:block" />
 
       {/* HERO */}
