@@ -159,7 +159,9 @@ function Index() {
         >
           ✉
         </div>
-        <span className="underline underline-offset-2">hello@jogiyo.cafe</span>
+        <a href="mailto:hello@savglace.com?subject=Hello&body=Hi there!" className="underline underline-offset-2">
+          hello@savglace.com
+        </a>
       </div>
 
       {/* scattered top doodles + checkboxes (desktop only — too crowded on mobile) */}
