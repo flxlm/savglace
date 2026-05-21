@@ -3,7 +3,7 @@ import matcha from "@/assets/flavor-matcha.svg";
 import mango from "@/assets/flavor-mango.svg";
 import blueberry from "@/assets/flavor-blueberry.svg";
 
-type Variant = "strawberry" | "matcha" | "mango" | "blueberry";
+type Variant = "strawberry" | "matcha" | "mango" | "blueberry" | "redbean" | "smarties";
 type Props = { variant: Variant };
 
 const sources: Record<Variant, string> = {
@@ -11,6 +11,8 @@ const sources: Record<Variant, string> = {
   matcha,
   mango,
   blueberry,
+  redbean: matcha,
+  smarties: strawberry,
 };
 
 export function ShavedIce({ variant }: Props) {
