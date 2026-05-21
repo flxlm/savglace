@@ -180,19 +180,19 @@ function Index() {
           <div className="relative mx-auto flex items-center justify-center gap-6 md:gap-16 max-w-3xl">
             <img src={logo} alt="SAVGLACÉ mark" className="flex-shrink-0 w-40 md:w-48 [&_path]:fill-foreground" />
 
-            {/* Arrow pointing from label back to logo */}
+            {/* Arrow pointing from "that's us!" back to logo */}
             <svg
-              className="absolute left-[42%] right-[28%] top-[30%] h-12 hidden md:block pointer-events-none"
-              viewBox="0 0 200 60"
-              preserveAspectRatio="none"
+              className="absolute left-[45%] right-[20%] top-[20%] h-1/2 hidden md:block pointer-events-none"
+              viewBox="0 0 300 120"
+              preserveAspectRatio="xMidYMid meet"
               fill="none"
               stroke={RED}
               strokeWidth="3"
               strokeLinecap="round"
               strokeLinejoin="round"
             >
-              <path d="M 190 15 Q 130 60, 60 30 T 15 25" />
-              <path d="M 28 14 L 12 24 L 24 38" />
+              <path d="M 280 60 Q 200 10, 100 40 T 20 70" />
+              <path d="M 35 60 L 20 70 L 35 80" />
             </svg>
 
             <span
