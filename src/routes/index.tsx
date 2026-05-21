@@ -422,13 +422,13 @@ function Index() {
               },
               {
                 num: "B",
-                name: "Matcha Latte Float",
-                desc: "Ceremonial matcha, oat milk, and a scoop of red bean shaved ice.",
+                name: "Crush Float",
+                desc: "Shaved Creamsicle? Cream-shaved-sicle? I don't know butyou get orange Crush and vanilla shaved ice so it's bound to be good!",
               },
               {
                 num: "C",
-                name: "Yuzu Ginger Shave",
-                desc: "Yuzu curd, candied ginger, honey drizzle. Sharp, bright, refreshing.",
+                name: "Vanilla",
+                desc: "Sometimes the unflavoured option is an experiment. Will the people like the base?? Be our test subject.",
               },
             ].map((item) => (
               <article
