@@ -166,14 +166,14 @@ function Index() {
         <span className="underline underline-offset-2">hello@jogiyo.cafe</span>
       </div>
 
-      {/* scattered top doodles + checkboxes */}
-      <CheckLabel label="COLD" className="top-20 left-[24%] rotate-[-4deg]" />
-      <CheckLabel label="FRUITY" className="top-28 right-[18%] rotate-[3deg]" />
-      <CheckLabel label="SWEET" className="top-[210px] left-[32%] rotate-[-2deg]" />
-      <CheckLabel label="HOT" checked={false} className="top-[230px] right-[10%] rotate-[2deg]" />
+      {/* scattered top doodles + checkboxes (desktop only — too crowded on mobile) */}
+      <CheckLabel label="COLD" className="hidden md:flex top-20 left-[24%] rotate-[-4deg]" />
+      <CheckLabel label="FRUITY" className="hidden md:flex top-28 right-[18%] rotate-[3deg]" />
+      <CheckLabel label="SWEET" className="hidden md:flex top-[210px] left-[32%] rotate-[-2deg]" />
+      <CheckLabel label="HOT" checked={false} className="hidden md:flex top-[230px] right-[10%] rotate-[2deg]" />
 
-      <Squiggle className="absolute top-12 left-[8%] w-24 text-foreground rotate-[-8deg]" />
-      <Star className="absolute top-[170px] right-[34%] w-10" style={{ color: RED }} />
+      <Squiggle className="absolute top-12 left-[8%] w-24 text-foreground rotate-[-8deg] hidden md:block" />
+      <Star className="absolute top-[170px] right-[34%] w-10 hidden md:block" style={{ color: RED }} />
       <TicTac className="absolute top-[300px] right-[6%] w-20 text-foreground hidden md:block" />
 
       {/* HERO */}
@@ -190,14 +190,14 @@ function Index() {
             </span>
           </div>
 
-          <h1 className="mt-8 font-display text-5xl md:text-7xl font-bold leading-[0.95]">
+          <h1 className="mt-8 font-display text-3xl sm:text-5xl md:text-7xl font-bold leading-[1.05] md:leading-[0.95]">
             <span className="inline-block border border-dashed border-foreground/40 px-2 py-1">SAVGLACÉ</span>
             <span style={{ color: RED }}>.</span> is a{" "}
             <span className="inline-block border border-dashed border-foreground/40 px-2 py-1">tiny</span> shaved
             <br />
             ice shop. We serve{" "}
             <span className="inline-block border border-dashed border-foreground/40 px-2 py-1">four</span> flavors that{" "}
-            <span className="font-marker text-6xl md:text-8xl align-middle" style={{ color: RED }}>
+            <span className="font-marker text-4xl sm:text-6xl md:text-8xl align-middle" style={{ color: RED }}>
               melt
             </span>{" "}
             slowly.
@@ -256,19 +256,19 @@ function Index() {
 
       {/* CONTACT WIDGETS */}
       <section className="relative px-8 pb-32">
-        <TicTac className="absolute right-[8%] -top-4 w-24 text-foreground" />
-        <Star className="absolute left-[12%] top-10 w-8" style={{ color: RED }} />
+        <TicTac className="absolute right-[8%] -top-4 w-24 text-foreground hidden md:block" />
+        <Star className="absolute left-[12%] top-10 w-8 hidden md:block" style={{ color: RED }} />
 
         <div className="mx-auto max-w-3xl text-center">
           <p className="text-sm mb-3">I want a flavor on the menu:</p>
-          <div className="mx-auto flex max-w-md items-center gap-2 border-2 border-dashed border-foreground/60 p-3">
+          <div className="mx-auto flex max-w-md flex-col sm:flex-row items-stretch sm:items-center gap-2 border-2 border-dashed border-foreground/60 p-3">
             <input
               type="text"
               placeholder="watermelon-basil…"
-              className="flex-1 bg-transparent font-marker text-2xl outline-none placeholder:text-foreground/30"
+              className="flex-1 min-w-0 bg-transparent font-marker text-2xl outline-none placeholder:text-foreground/30"
             />
             <button
-              className="px-4 py-1.5 text-sm font-medium text-white"
+              className="px-4 py-1.5 text-sm font-medium text-white shrink-0"
               style={{ backgroundColor: "#3b82f6" }}
               type="button"
             >
@@ -281,8 +281,8 @@ function Index() {
           </p>
         </div>
 
-        <Arrow className="absolute bottom-10 left-[10%] w-24 rotate-[170deg]" style={{ color: RED }} />
-        <Smiley className="absolute bottom-6 right-[10%] w-16" style={{ color: RED }} />
+        <Arrow className="absolute bottom-10 left-[10%] w-24 rotate-[170deg] hidden md:block" style={{ color: RED }} />
+        <Smiley className="absolute bottom-6 right-[10%] w-16 hidden md:block" style={{ color: RED }} />
       </section>
 
       {/* FOOTER */}
