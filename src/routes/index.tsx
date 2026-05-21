@@ -247,6 +247,53 @@ function Index() {
         </div>
       </section>
 
+      {/* EXPERIMENTAL ITEMS */}
+      <section className="relative px-8 pt-16 pb-24">
+        <Star className="absolute top-4 right-[12%] w-10 hidden md:block" style={{ color: RED }} />
+        <Squiggle className="absolute top-20 left-[6%] w-32 -rotate-[8deg] hidden md:block" style={{ color: RED }} />
+        <Smiley className="absolute bottom-12 right-[8%] w-20 hidden md:block" style={{ color: RED }} />
+
+        <div className="mx-auto max-w-5xl">
+          <div className="mb-14 flex items-baseline gap-4">
+            <h2 className="font-display text-4xl md:text-5xl font-bold">Experimental Items</h2>
+            <span className="font-marker text-3xl rotate-[3deg] hidden sm:inline-block" style={{ color: RED }}>
+              limited run
+            </span>
+          </div>
+
+          <div className="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-12 md:gap-y-16">
+            {[
+              {
+                num: "A",
+                name: "Shaved Ice Affogato",
+                desc: "Espresso poured over vanilla milk shaved ice. Hot meets cold in one bowl.",
+              },
+              {
+                num: "B",
+                name: "Matcha Latte Float",
+                desc: "Ceremonial matcha, oat milk, and a scoop of red bean shaved ice.",
+              },
+              {
+                num: "C",
+                name: "Yuzu Ginger Shave",
+                desc: "Yuzu curd, candied ginger, honey drizzle. Sharp, bright, refreshing.",
+              },
+            ].map((item, i) => (
+              <article
+                key={item.num}
+                className={`relative border-2 border-dashed border-foreground/50 p-6 ${i === 1 ? "md:mt-8" : ""}`}
+              >
+                <p className="font-marker text-2xl absolute -top-4 left-4 px-2 bg-background" style={{ color: RED }}>
+                  {item.num}.
+                </p>
+                <p className="font-display text-xl md:text-2xl font-bold mt-2">{item.name}</p>
+                <p className="text-sm text-foreground/70 mt-2 leading-relaxed">{item.desc}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CONTACT WIDGETS */}
       <section className="relative px-8 pb-32">
         <TicTac className="absolute right-[8%] -top-4 w-24 text-foreground hidden md:block" />
