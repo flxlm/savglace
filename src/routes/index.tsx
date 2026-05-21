@@ -99,13 +99,13 @@ function Index() {
       <section className="relative pt-32 pb-12">
         <div className="mx-auto max-w-5xl px-8 text-center">
           <div className="relative inline-block">
-            <img src={logo} alt="저기요 mark" className="mx-auto w-40 md:w-48 [&_path]:fill-foreground" />
+            <img src={logo} alt="SAVGLACÉ mark" className="mx-auto w-40 md:w-48 [&_path]:fill-foreground" />
             <Arrow className="absolute -right-28 top-6 w-28 hidden md:block" style={{ color: RED }} />
             <span className="absolute -right-32 -top-2 font-marker text-xl rotate-[8deg] hidden md:inline" style={{ color: RED }}>that's us!</span>
           </div>
 
           <h1 className="mt-8 font-display text-5xl md:text-7xl font-bold leading-[0.95]">
-            <span className="inline-block border border-dashed border-foreground/40 px-2 py-1">저기요</span>
+            <span className="inline-block border border-dashed border-foreground/40 px-2 py-1">SAVGLACÉ</span>
             <span style={{ color: RED }}>.</span>{" "}
             is a <span className="inline-block border border-dashed border-foreground/40 px-2 py-1">tiny</span> shaved ice
             <br />
@@ -189,7 +189,7 @@ function Index() {
 
       {/* FOOTER */}
       <footer className="border-t-2 border-foreground px-8 py-6 flex flex-wrap items-center justify-between gap-4 text-xs uppercase tracking-widest">
-        <p>© 2026 저기요 — a house of ice</p>
+        <p>© 2026 SAVGLACÉ — a house of ice</p>
         <p>780 Brewster Ave · Walk-in only</p>
         <p className="font-marker text-xl normal-case tracking-normal" style={{ color: RED }}>made with cold hands</p>
       </footer>

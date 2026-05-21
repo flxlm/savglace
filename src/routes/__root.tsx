@@ -72,10 +72,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "저기요 — Shaved Ice" },
+      { title: "SAVGLACÉ — Shaved Ice" },
       { name: "description", content: "Four flavors of hand-shaved ice. A first season menu." },
-      { name: "author", content: "저기요" },
-      { property: "og:title", content: "저기요 — Shaved Ice" },
+      { name: "author", content: "SAVGLACÉ" },
+      { property: "og:title", content: "SAVGLACÉ — Shaved Ice" },
       { property: "og:description", content: "Four flavors of hand-shaved ice." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
