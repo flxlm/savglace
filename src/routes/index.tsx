@@ -207,7 +207,6 @@ const Lightning = ({ className = "", style }: DoodleProps) => (
   </svg>
 );
 
-
 const Arrow = ({ className = "", style }: DoodleProps) => (
   <svg
     viewBox="0 0 120 60"
@@ -275,7 +274,6 @@ function Index() {
       <Sun className="absolute top-[180px] right-[22%] w-12 text-foreground hidden md:block rotate-[12deg]" />
       <Spiral className="absolute top-[340px] left-[5%] w-14 hidden md:block" style={{ color: RED }} />
       <Drop className="absolute top-[120px] left-[18%] w-8 hidden md:block rotate-[15deg]" style={{ color: RED }} />
-
 
       {/* HERO */}
       <section className="relative pt-32 pb-12">
@@ -347,7 +345,6 @@ function Index() {
         <Heart className="absolute bottom-12 left-[3%] w-10 hidden md:block rotate-[-10deg]" style={{ color: RED }} />
         <Lightning className="absolute top-24 right-[36%] w-8 hidden md:block" style={{ color: RED }} />
 
-
         <div className="mx-auto max-w-6xl">
           <div className="mb-12 flex items-baseline gap-4">
             <h2 className="font-display text-4xl md:text-5xl font-bold">The Menu</h2>
@@ -408,12 +405,11 @@ function Index() {
         <Sparkle className="absolute bottom-20 left-[20%] w-10 hidden md:block" style={{ color: RED }} />
         <Sun className="absolute bottom-32 right-[30%] w-10 hidden md:block" style={{ color: RED }} />
 
-
         <div className="mx-auto max-w-5xl">
           <div className="mb-14 flex items-baseline gap-4">
             <h2 className="font-display text-4xl md:text-5xl font-bold">Experimental Items</h2>
             <span className="font-marker text-3xl rotate-[3deg] hidden sm:inline-block" style={{ color: RED }}>
-              limited run
+              limited run, maybe?
             </span>
           </div>
 
@@ -460,7 +456,6 @@ function Index() {
         <Heart className="absolute top-2 left-[30%] w-8 hidden md:block" style={{ color: RED }} />
         <Cloud className="absolute top-0 right-[28%] w-16 text-foreground hidden md:block" />
         <Drop className="absolute bottom-20 right-[20%] w-6 hidden md:block rotate-[-12deg]" style={{ color: RED }} />
-
       </section>
 
       {/* FOOTER */}
