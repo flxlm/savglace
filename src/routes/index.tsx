@@ -311,15 +311,14 @@ function Index() {
             </div>
           </div>
 
-          <h1 className="mt-8 font-display text-3xl sm:text-5xl md:text-7xl font-bold leading-[1.05] md:leading-[0.95]">
+          <h1 className="mt-8 font-display text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold leading-[1.1] md:leading-[0.95] text-balance">
             <span className="inline-block border border-dashed border-foreground/40 px-2 py-1">SAVGLACÉ</span>
             <span style={{ color: RED }}>.</span> is a{" "}
             <span className="inline-block border border-dashed border-foreground/40 px-2 py-1">pop-up</span> shaved
-            <br />
             ice shop. We serve{" "}
             <span className="inline-block border border-dashed border-foreground/40 px-2 py-1">original</span> flavors
             that{" "}
-            <span className="font-marker text-4xl sm:text-6xl md:text-8xl align-middle" style={{ color: RED }}>
+            <span className="font-marker text-4xl sm:text-5xl md:text-7xl lg:text-8xl align-middle" style={{ color: RED }}>
               cools
             </span>{" "}
             you nicely.
